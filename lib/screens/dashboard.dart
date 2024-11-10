@@ -10,6 +10,7 @@ import 'envvar/environment_page.dart';
 import 'home_page/home_page.dart';
 import 'history/history_page.dart';
 import 'settings_page.dart';
+import 'package:apidash/common/utils.dart';
 
 class SaveIntent extends Intent {}
 
@@ -27,7 +28,7 @@ class Dashboard extends ConsumerWidget {
             isControlPressed = true;
         }
         if (event.logicalKey == LogicalKeyboardKey.keyS && isControlPressed) {
-          SaveButton.saveData(context, ref);
+          saveData(context, ref);
         }
       }
       if (event is KeyUpEvent) {
