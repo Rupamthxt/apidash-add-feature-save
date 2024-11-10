@@ -1,8 +1,8 @@
-import 'package:apidash/providers/providers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:apidash/providers/providers.dart';
 import 'package:apidash/utils/utils.dart';
 import 'package:apidash/widgets/widgets.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 Future<void> saveCollection(
     Map<String, dynamic> data, ScaffoldMessengerState sm) async {
